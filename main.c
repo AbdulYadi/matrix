@@ -90,7 +90,7 @@ static void identity()
 {
     matrix a, b;
 
-    //create heap allocation for 3x3 matrix and set diagonal value to 9
+    //create heap allocation for 3x3 matrix and set diagonal value to 1
     matrix_identity_create_buffer(3, &a);
     //show matrix
     printf("\nIdentity matrix\n");
@@ -102,7 +102,7 @@ static void identity()
     //show matrix
     printf("Random matrix\n");
     display(&b);
-    //zeroes out all member and set diagonal values to 5
+    //zeroes out all member and set diagonal values to 1
     matrix_identity(&b);
     //show matrix
     printf("Mofify random to identity matrix\n");
